@@ -1,0 +1,70 @@
+footer{
+	background: #414146;
+	padding: 30px 0;
+	color: #fff;
+}
+
+footer h4{
+	font-size: 18px;
+}
+
+.footer-container{
+	width: 90%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 35% 35% 20%;
+	grid-column-gap: 3%;
+}
+
+.footer-container .about-us a{
+	display: inline-block;
+	background: #000;
+	color: #fff;
+	border-bottom:2px solid #f5e10a;
+	font-size: 15px;
+	padding: 15px;
+	margin-top: 30px;
+	margin-bottom: 40px;
+}
+
+.about-us h4{
+	margin-bottom: 20px;
+}
+
+.tweets h4{
+	margin-bottom: 20px;
+}
+
+.tweets-p{
+	position: relative;
+	margin-left: 30px;
+	margin-bottom: 30px;
+}
+
+.tweets-p::before{
+	position: absolute;
+	content: "";
+	width: 30px;
+	height: 30px;
+	left: -40px;
+	background: url(img/Twitter-birs-icon.png) center no-repeat;
+}
+
+.tweet-time{
+	margin: 0;
+	padding: 0;
+	
+	font-size: 10px;
+	color: #f5e10a;
+}
+
+.social-connecting{
+	display: flex;
+}
+.social-connecting p{
+	margin-left: 30px;
+}
+
+.social-connecting p img{
+	margin-left: 5px;
+}

@@ -1,0 +1,22 @@
+.brand-slider{
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+
+
+	.brand-slider__header{
+		background: #424147;
+		padding: 0 8px;
+		font-size: 18px;
+		display: inline-block;
+		color: #f5e10a;
+		margin-bottom: 30px;
+		margin-top: 40px;
+	}
+
+	.brand-slider__description{
+		margin-bottom: 40px;
+		color: #424146;
+		font-size: 16px;
+	}
+}
