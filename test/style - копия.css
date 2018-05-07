@@ -1,0 +1,397 @@
+body {
+	font-family: 'Poppins', sans-serif;
+	background-color: #f6f6f6;
+}
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+li{
+	list-style: none;
+	display: flex;
+}
+
+
+a{
+	text-decoration: none;
+}
+
+img {
+	margin: 0;
+}
+
+header {
+	background: #f7f7f7;
+	padding: 22px 0;
+}
+
+.header-container{
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header-container a{
+	color: #000;
+	font-size: 16px;
+	padding: 27px 6px;
+	margin-right: 63px;
+}
+
+#menu-checkbox{
+	display: none;
+}
+
+.header-container a:hover{
+	background: #ffeb00;
+}
+
+ul{
+	display: flex;
+}
+
+nav {
+	margin-top: 20px;
+}
+
+
+.top-slide{
+	padding-top: 120px;
+	padding-bottom: 280px;
+	background: url(img/slider_bg.png) no-repeat;
+}
+
+.top-container{
+	width: 85%;
+	margin: 0 auto;
+}
+
+.top-slide h2{
+	background: #ffeb00;
+	display: inline;
+	font-size: 70px;
+	padding: 0 13px;
+}
+
+.top-slide p{
+	background: #3f3f44;
+	display: inline;
+	font-size: 24px;
+	padding: 0 6px; 
+	color: white;
+}
+
+.top-slide :nth-child(2){
+	margin-bottom: 10px;
+}
+
+.specialize-container{
+	width: 80%;
+	margin: 0 auto;
+	margin-bottom: 90px;
+	text-align: center;
+}
+
+.specialize-container h3{
+	font-size: 35px;
+}
+
+.specialize-container p{
+	font-size: 24px
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.specialize-cards{
+	display: flex;
+	justify-content: space-between;
+}
+
+.card{
+	margin: 0;
+	width: 250px;
+}
+
+.bottom-card{
+	min-height: auto;
+	padding: 0;
+	background:#3f3f44;
+}
+
+.bottom-card p{
+	padding: 10px 0;
+	margin: 0;
+	font-size: 13px;
+}
+
+.top-card{
+	margin: 0;
+	background: #ffeb00;
+}
+
+.top-card--first{
+}
+
+.top-card img{
+	margin: 0;
+}
+
+.top-card p{
+	margin: 0;
+	font-size: 20px;
+	background: white;
+}
+
+.first-p{
+	margin: 0;
+	font-size: 20px;
+	color: white; 
+}
+
+.portfolio{
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+}
+.portfolio h4{
+	background: #424147;
+	padding: 0 20px;
+	display: inline-block;
+	color: #f5e10a;
+	margin-bottom: 30px;
+}
+.portfolio p{
+	color: #424146;
+	font-size: 16px;
+}
+
+.toggles button{
+	border: none;
+	background-color: transparent;
+	color: #424146;
+	cursor: pointer;
+	font-size: 16px;
+	margin: 20px 5px;
+}
+
+.toggles button:after{
+	content: ' / ';
+}
+
+.toggles button:last-child::after{
+	content: '';
+}
+
+.posts{
+	width: 90%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+}
+
+.brand-slider{
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.brand-slider h4{
+	background: #424147;
+	padding: 0 8px;
+	font-size: 18px;
+	display: inline-block;
+	color: #f5e10a;
+	margin-bottom: 30px;
+	margin-top: 40px;
+}
+
+.brand-slider p{
+	margin-bottom: 40px;
+	color: #424146;
+	font-size: 16px;
+}
+
+footer{
+	background: #414146;
+	padding: 30px 0;
+	color: #fff;
+}
+
+footer h4{
+	font-size: 18px;
+}
+
+.footer-container{
+	width: 90%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 35% 35% 20%;
+	grid-column-gap: 3%;
+}
+
+.footer-container .about-us a{
+	display: inline-block;
+	background: #000;
+	color: #fff;
+	border-bottom:2px solid #f5e10a;
+	font-size: 15px;
+	padding: 15px;
+	margin-top: 30px;
+	margin-bottom: 40px;
+}
+
+.about-us h4{
+	margin-bottom: 20px;
+}
+
+.tweets h4{
+	margin-bottom: 20px;
+}
+
+.tweets-p{
+	position: relative;
+	margin-left: 30px;
+	margin-bottom: 30px;
+}
+
+.tweets-p::before{
+	position: absolute;
+	content: "";
+	width: 30px;
+	height: 30px;
+	left: -40px;
+	background: url(img/Twitter-birs-icon.png) center no-repeat;
+}
+
+.tweet-time{
+	margin: 0;
+	padding: 0;
+	
+	font-size: 10px;
+	color: #f5e10a;
+}
+
+.social-connecting{
+	display: flex;
+}
+.social-connecting p{
+	margin-left: 30px;
+}
+
+.social-connecting p img{
+	margin-left: 5px;
+}
+
+
+
+@media screen and (max-width: 420px) {
+	.header-container{
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+	}
+	.main-menu{
+		display: none;
+		position: relative;
+		top: 30px;
+		right: 115px;
+	}
+	.main-menu li {
+		width: 100%;
+		display: block;
+		font-size: 12px;
+	}
+	.main-menu a{
+		display: block;
+		padding: 8px;
+	}
+	.toggle-button{
+		text-align: center;
+		display: block;
+		cursor: pointer;
+		color: #000;
+	}
+	.toggle-button:after{
+		content: attr(data-open);
+		display: block;
+	}
+	#menu-checkbox:checked + nav[role="navigation"] .main-menu{
+		display: block;
+	}
+	#menu-checkbox:checked + nav[role="navigation"] .toggle-button:after{
+		content: attr(data-close);
+	}
+	.header-container a{
+		margin-right: -65px;
+	}
+
+	.top-slide{
+		padding-top:40px;
+		padding-bottom: 40px;
+	}
+	.top-slide h2{
+		font-size: 32px;
+	}
+	.top-slide p {
+    font-size: 16px;
+	}
+	.specialize-container p {
+		font-size: 16px;
+	}
+	.specialize-cards{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	.bottom-card{
+		width: 250px;
+		margin: 0 auto;
+	}
+	.posts{
+	width: 90%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: auto;
+	}
+}
+
+
+<section class="portfolio">
+			<h4 class="portfolio-header">OUR WORK</h4>
+			<p class="portfolio-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
+			<div class="portfolio-toggles">
+				<button id="showall">SHOW ALL</button>
+				<button id="webdev">WEB DEVELOPMENT</button>
+				<button id="webdesign">WEB DESIGN</button>
+				<button id="graphd">GRAPHIC DESIGN</button>
+			</div>
+			<ul class="portfolio-posts__list">
+				<li class="portfolio-item portfolio-item--webdev">
+					<img src="img/Portfolio-work-1.png" width="300" height="200" alt="1">
+				</li>
+				<li class="portfolio-item portfolio-item--webdesign">
+					<img src="img/Portfolio-work-2.png" width="300" height="200" alt="1">
+				</li>
+				<li class="portfolio-item portfolio-item--webdev">
+					<img src="img/Portfolio-work-4.png" width="300" height="200" alt="1">
+				</li>
+				<li class="portfolio-item portfolio-item--webdesign">
+					<img src="img/Portfolio work 7.png" width="300" height="200" alt="1">
+				</li>
+				<li class="portfolio-item portfolio-item--webdev">
+					<img src="img/Portfolio work 8.png" width="300" height="200" alt="1">
+				</li>
+				<li class="portfolio-item portfolio-item--graphd">
+					<img src="img/Portfolio work 9.png" width="300" height="200" alt="1">
+				</li>
+				<li class="portfolio-item portfolio-item--webdev">
+					<img src="img/Portfolio work 10.png" width="300" height="200" alt="1">
+				</li>
+				<li class="portfolio-item portfolio-item--graphd">
+					<img src="img/Portfolio work 11.png" width="300" height="200" alt="1">
+				</li>
+			</ul>
+		</section>

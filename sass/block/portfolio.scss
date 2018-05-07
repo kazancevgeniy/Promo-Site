@@ -1,5 +1,5 @@
 .portfolio{
-	width: 95%;
+	width: 90%;
 	margin: 0 auto;
 	text-align: center;
 
@@ -8,7 +8,7 @@
 		padding: 0 20px;
 		display: inline-block;
 		color: #f5e10a;
-		margin-bottom: 30px;
+		margin-bottom: 20px;
 	}
 
 	.portfolio-description{
@@ -18,15 +18,12 @@
 
 	.portfolio-button{
 		position: relative;
-		//border: none;
-    //background-color: #3f3f44; 
-		//background-color: transparent;
 		color: #424146;
 		cursor: pointer;
-		font-size: 16px;
+		font-size: 12px;
 		padding: 5px;
-		margin: 20px 20px;
-		
+		margin: 10px;
+
 		&:hover{
 			background-color: #f5e10a;
 		}
@@ -38,7 +35,7 @@
 		&:after{
 			position: absolute;
 			content: '  /  ';
-			right: -30px;
+			right: -15px;
 		}
 
 		&:last-child::after{
@@ -47,18 +44,8 @@
 	}
 
 	.posts{
-		width: 90%;
-		margin: 0 auto;
 		display: flex;
-		justify-content: center;
+		justify-content: space-around;
 		flex-wrap: wrap;
-
-		.post{
-			margin-right: 20px;
-
-			&:nth-child(4), &:nth-child(8){
-				margin-right: 0px;
-			}
-		}
 	}
 }

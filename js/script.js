@@ -1,3 +1,15 @@
+'use strict';
+
+var menuToggle = document.querySelector('.header-menu__toggle');
+var menuList = document.querySelector('.header-menu__list');
+
+menuToggle.addEventListener("click", function(event) {
+  event.preventDefault();
+  menuToggle.classList.toggle("header-menu__toggle--close");
+  menuList.classList.toggle("header-menu__list--show");
+});
+
+
 $(function() {
  $('.portfolio-toggles .portfolio-button').click(function(){
 	var get_id = this.id;
@@ -12,13 +24,14 @@ $(function() {
  });
 });
 
+
 $(document).ready(function(){
   $(".owl-carousel").owlCarousel({
     items:8
   });
 });
 
-if($(window).width() < 420){
+if($(window).width() < 700){
 	$(".owl-carousel").owlCarousel({
 		items:3
 	});

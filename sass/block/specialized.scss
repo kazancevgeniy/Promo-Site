@@ -1,9 +1,8 @@
 .specialize-container{
 	width: 90%;
 	margin: 0 auto;
-	margin-bottom: 90px;
+	margin-bottom: 50px;
 	text-align: center;
-
 
 
 	.specialize-header{
@@ -11,35 +10,46 @@
 		font-size: 35px;
 		color: #403f46;
 		text-transform: uppercase;
+    @media screen and(max-width: 800px){
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
 	}
 
 	.specialize-description{
 		font-size: 24px;
 		margin-bottom: 50px;
 		color: #403f46;
+    @media screen and(max-width: 800px){
+      font-size: 12px;
+      margin-bottom: 20px;
+    }
 	}
 
 	.specialize-cards__list{
-		margin: 0 auto;
-		width: 90%;
 		display: flex;
-		justify-content: space-between;
-	
-
+		justify-content: space-around;
+    //align-content: space-around;
+    flex-wrap:wrap;
+    @media screen and(max-width: 800px){
+      justify-content: center;
+      align-items:center;
+      flex-direction: column;
+    }
 
 		.specialize-cards__item{
 			text-align: center;
 			width: 250px;
-		
-
+      margin-bottom: 20px;
 
 			.card-top{
-				min-height: 200px;
+				//min-height: 200px;
 			}
 
 			.first-card{
 				min-height: 208px;
 				background: url(../img/first-card.png) center no-repeat;
+        background-size: cover;
 			}
 
 			.second-card{
